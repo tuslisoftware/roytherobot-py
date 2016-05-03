@@ -1,4 +1,4 @@
-# roytherobot
+# roytherobot-py
 Python control module for Roemotion's Roy the Robot.
 
 This Python module allows a user to control a Roemotion Roy the Robot. Currently, only Roy the Robot Arm is supported, and only those that use a Parallax Propeller Servo Controller USB (28830). The serial protocol documentation for the Propeller can be found at <https://www.parallax.com/downloads/propeller-servo-controller-guide>. Information about Roy The Robot Arm can be found at <http://www.roemotion.com>.
