@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-setup(name='roytherobot',
+setup(name='roytherobot-py',
     version='0.1',
     description='Module to control Roy the Robot',
     url='https://github.com/tuslisoftware/roytherobot',
