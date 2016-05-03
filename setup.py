@@ -5,7 +5,7 @@ from setuptools import setup
 setup(name='roytherobot-py',
     version='0.1',
     description='Module to control Roy the Robot',
-    url='https://github.com/tuslisoftware/roytherobot',
+    url='https://github.com/tuslisoftware/roytherobot-py',
     author='Tusli Software LLC',
     author_email='info@tuslisoftware.com',
     license='MIT',
