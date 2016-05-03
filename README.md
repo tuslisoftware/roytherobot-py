@@ -14,19 +14,6 @@ Example of basic usage:
 ```python
 import roytherobot
 
-port = '/dev/ttyUSB0'
-roy = roytherobot.Arm(port)
-roy.enable_all_servos()
-roy.move(roy.PINKY, 1100, 0.23)
-roy.move(roy.PINKY, 580, 0.33)
-roy.close()
-```
-
-Example using a "with" statement:
-
-```python
-import roytherobot
-
 with roytherobot.Arm('/dev/ttyUSB0') as roy:
   roy.enable_all_servos()
   roy.move(roy.PINKY, 1100, 0.23)
