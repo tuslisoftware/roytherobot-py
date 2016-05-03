@@ -27,10 +27,10 @@ with roytherobot.Arm('/dev/ttyUSB0') as roy:
 	# Enable all of the servos
 	roy.enable_all_servos()
 	
-	# Open Roy's pinky finger over a 0.23 second interval
+	# Open Roy's pinky finger over 0.23 seconds
 	roy.move(roy.PINKY, 1100, 0.23)
 	
-	# Close Roy's pinky finger over a 0.33 second interval
+	# Close Roy's pinky finger over 0.33 seconds
 	roy.move(roy.PINKY, 580, 0.33)
 ```
 
