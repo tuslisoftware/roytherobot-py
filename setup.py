@@ -16,6 +16,7 @@ setup(name='roytherobot-py',
     zip_safe=False,
     classifiers=[
         'Development Status :: 3 - Alpha',
+        'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
         'Operating System :: MacOS',
