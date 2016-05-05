@@ -499,6 +499,7 @@ class Arm(object):
             raise RoyTheRobotError("Invalid controller board.")
         self.write_sleep = write_sleep
         self.debug = debug
+        self.enable_all_servos()
         self._debug("Initialized roytherobot.Arm.")
 
     def __enter__(self):
@@ -698,8 +699,8 @@ class Arm(object):
         RoyTheRobotError for invalid channels, pulse_widths or duration values.
 
         """
-        self._debug("Moving channel %d to %d in %g "
-                    "seconds." % (channels, pulse_widths, duration))
+        self._debug("Moving channel " + str(channels) + " to " + str(pulse_widths) +
+                    " in %g seconds." % duration)
 
         # Make sure the channels and pulse_widths are iterables
         if not _iterable(channels):
