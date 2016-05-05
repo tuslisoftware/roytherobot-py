@@ -698,8 +698,6 @@ class Arm(object):
         RoyTheRobotError for invalid channels, pulse_widths or duration values.
 
         """
-        self._debug("Moving channel %d to %d in %g "
-                    "seconds." % (channels, pulse_widths, duration))
 
         # Make sure the channels and pulse_widths are iterables
         if not _iterable(channels):
