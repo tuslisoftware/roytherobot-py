@@ -144,10 +144,6 @@ def run_demo(port, debug=False):
         # Print some information about Roy
         print("FW Version: " + str(roy.controller.get_fw_version_number()))
 
-        # Set the baud rate and enable all servos
-        roy.controller.set_baud_rate(0)
-        roy.enable_all_servos()
-
         # Run the demo movements
         initialize_positions(roy)
         open_and_close_fingers(roy)

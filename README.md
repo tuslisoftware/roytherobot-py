@@ -14,9 +14,6 @@ import roytherobot
 # Let's assume the controller is connected to a USB port named '/dev/ttyUSB0' in Linux
 # A context manager safely closes the serial device when finished
 with roytherobot.Arm('/dev/ttyUSB0') as roy:
-
-	# Enable all of the servos
-	roy.enable_all_servos()
 	
 	# Open Roy's pinky finger to position 1100 over a 0.23 second duration
 	roy.move(roy.PINKY, 1100, 0.23)
